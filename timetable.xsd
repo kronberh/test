@@ -12,10 +12,11 @@
       <xs:sequence>
         <xs:element ref = "lesson" maxOccurs = "unbounded"/>
       </xs:sequence>
-      <xs:attribute name = "dayofWeek" use = "required" type = "xs:string"/>
+      <xs:attribute name = "dayOfWeek" use = "required" type = "xs:string"/>
     </xs:complexType>
   </xs:element>
   <xs:element name = "lesson">
+    <xs:element name = "type" type = "xs:string"/>
     <xs:complexType>
       <xs:sequence>
         <xs:element ref = "timeFrom"/>
