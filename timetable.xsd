@@ -16,7 +16,6 @@
     </xs:complexType>
   </xs:element>
   <xs:element name = "lesson">
-    <xs:attribute name = "type" use = "required" type = "xs:string"/>
     <xs:complexType>
       <xs:sequence>
         <xs:element ref = "timeFrom"/>
@@ -25,6 +24,7 @@
         <xs:element ref = "teacher"/>
         <xs:element ref = "room" minOccurs = "0"/>
       </xs:sequence>
+      <xs:attribute name = "type" use = "required" type = "xs:string"/>
     </xs:complexType>
   </xs:element>
   <xs:element name = "timeFrom" type = "xs:string"/>
